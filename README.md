@@ -47,3 +47,9 @@ As an Account Holder
 So I can easily see my latest deposit/withdrawal 
 I would like my bank statement to print the most recent transaction first. 
 ```
+
+## Planning
+
+### Class Diagram
+
+![class_diagram](/images/class_diagram.png) 
