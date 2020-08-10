@@ -28,6 +28,7 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
+
 ## User Stories
 
 ```
@@ -48,8 +49,37 @@ So I can easily see my latest deposit/withdrawal
 I would like my bank statement to print the most recent transaction first. 
 ```
 
+
 ## Planning
 
 ### Class Diagram
 
 ![class_diagram](/images/class_diagram.png) 
+
+
+## Instructions
+
+### Set-up
+
+```
+$ git clone https://github.com/Dhara-95/bank_tech_test.git
+$ bundle install
+```
+
+### Run Code
+```
+$ irb
+```
+
+### Run Tests
+Test coverage will show in the terminal once 'rspec' command is run
+
+```
+$ rspec
+```
+
+### Run Code Linter
+
+```
+$ rubocop
+```
