@@ -74,12 +74,12 @@ $ bundle install
 ```
 
 ### Run Code in REPL
-To open the REPL:
+To open IRB:
 ```
 $ irb
 ```
 
-To exit the REPL:
+To quit IRB:
 ```
 $ exit
 ```
@@ -88,8 +88,9 @@ Example of running the code in IRB to deposit & withdraw money and print the sta
 ![code_in_irb](/images/code_in_irb.png)
 
 ### Run Tests
-Test coverage will show in the terminal once 'rspec' command is run
 ***11 tests, 100% Test Coverage***
+
+Test coverage will show in the terminal once 'rspec' command is run
 
 ```
 $ rspec
