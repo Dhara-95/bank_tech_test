@@ -21,7 +21,7 @@ describe Account do
 
     it 'adds date, credit, deposit, balance to an array when money is deposited' do
       subject.deposit(1000)
-      expect(subject.account_history).to eq(["date: #{Time.now.strftime('%d/%m/%Y')}, credit: 0, debit: 1000, balance: 1000"])
+      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')}, 0, 1000, 1000"])
     end
   end
 
@@ -42,8 +42,8 @@ describe Account do
     it 'adds date, credit, deposit, balance to an array when money is withdrawn' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.account_history).to eq(["date: #{Time.now.strftime('%d/%m/%Y')}, credit: 0, debit: 1000, balance: 1000",
-        "date: #{Time.now.strftime('%d/%m/%Y')}, credit: 500, debit: 0, balance: 500"])
+      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')}, 0, 1000, 1000",
+        "#{Time.now.strftime('%d/%m/%Y')}, 500, 0, 500"])
     end
   end
 end

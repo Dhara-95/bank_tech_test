@@ -8,13 +8,13 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    @account_history.push("date: #{Time.now.strftime('%d/%m/%Y')}, credit: 0, debit: #{amount}, balance: #{@balance}")
+    @account_history.push("#{Time.now.strftime('%d/%m/%Y')}, 0, #{amount}, #{@balance}")
   end
 
   def withdraw(amount)
     raise 'Withdrawal amount exceeds current balance' if amount > balance
 
     @balance -= amount
-    @account_history.push("date: #{Time.now.strftime('%d/%m/%Y')}, credit: #{amount}, debit: 0, balance: #{@balance}")
+    @account_history.push("#{Time.now.strftime('%d/%m/%Y')}, #{amount}, 0, #{@balance}")
   end
 end
