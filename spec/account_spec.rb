@@ -5,6 +5,10 @@ describe Account do
     it 'initializes with a balance of zero' do
       expect(subject.balance).to eq(0)
     end
+
+    it 'initializes with an empty account history' do
+      expect(subject.account_history).to eq([])
+    end
   end
 
   describe '#deposit' do
