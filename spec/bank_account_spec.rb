@@ -56,7 +56,8 @@ describe BankAccount do
     it 'prints the formatted account_history with most recent transaction first' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 500 || 0 || 500", "#{Time.now.strftime('%d/%m/%Y')} || 0 || 1000 || 1000"])
+      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 500 || 0 || 500", 
+        "#{Time.now.strftime('%d/%m/%Y')} || 0 || 1000 || 1000"])
     end
   end
 end

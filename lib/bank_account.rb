@@ -19,10 +19,10 @@ class BankAccount
   end
 
   def print_statement
-    puts "date || credit || debit || balance"
+    puts 'date || credit || debit || balance'
     @account_history.reverse.each do |transaction|
-      @account_history.to_s.split 
+      @account_history.to_s.split
       puts transaction
-    end    
+    end
   end
 end

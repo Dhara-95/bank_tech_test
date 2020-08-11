@@ -1,4 +1,8 @@
 # Bank Tech Test
+This is a practice tech test challenge, which aims to simulate a Bank. The user can interact with the code via IRB to deposit and withdraw money, as well as printing a bank statement to see their transaction history.
+
+The original instructions for this challenge can be found here: https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md 
+
 
 ## Specification
 
@@ -70,12 +74,22 @@ $ bundle install
 ```
 
 ### Run Code in REPL
+To open the REPL:
 ```
 $ irb
 ```
 
+To exit the REPL:
+```
+$ exit
+```
+
+Example of running the code in IRB to deposit & withdraw money and print the statement:
+![code_in_irb](/images/code_in_irb.png)
+
 ### Run Tests
-Test coverage will show in the terminal once 'rspec' command is run (100% Test Coverage)
+Test coverage will show in the terminal once 'rspec' command is run
+***11 tests, 100% Test Coverage***
 
 ```
 $ rspec
