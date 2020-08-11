@@ -10,6 +10,8 @@ class Account
   end
 
   def withdraw(amount)
+    raise 'Withdrawal amount exceeds current balance' if amount > balance
+
     @balance -= amount
   end
 end
