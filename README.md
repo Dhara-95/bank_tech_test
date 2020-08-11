@@ -43,6 +43,12 @@ I would like to print my bank statement to show the date, amount of the transact
 As an Account Holder
 So I can easily see my latest deposit/withdrawal 
 I would like my bank statement to print the most recent transaction first. 
+
+Edge case:
+-----------
+As an Account Holder
+So I do not go into a negative balance
+I would like an error message if my withdrawl amount exceeds my current balance
 ```
 
 
@@ -69,7 +75,7 @@ $ irb
 ```
 
 ### Run Tests
-Test coverage will show in the terminal once 'rspec' command is run
+Test coverage will show in the terminal once 'rspec' command is run (100% Test Coverage)
 
 ```
 $ rspec

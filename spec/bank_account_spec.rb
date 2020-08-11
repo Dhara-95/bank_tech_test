@@ -1,6 +1,6 @@
-require 'account.rb'
+require 'bank_account.rb'
 
-describe Account do
+describe BankAccount do
   describe '#initialize' do
     it 'initializes with a balance of zero' do
       expect(subject.balance).to eq(0)

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/spec/account_spec.rb": {
+      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/spec/bank_account_spec.rb": {
         "lines": [
           1,
           null,
@@ -67,7 +67,7 @@
           null
         ]
       },
-      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/lib/account.rb": {
+      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/lib/bank_account.rb": {
         "lines": [
           1,
           1,
@@ -100,6 +100,6 @@
         ]
       }
     },
-    "timestamp": 1597153730
+    "timestamp": 1597154403
   }
 }

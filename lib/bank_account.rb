@@ -1,4 +1,4 @@
-class Account
+class BankAccount
   attr_reader :balance, :account_history
 
   def initialize
