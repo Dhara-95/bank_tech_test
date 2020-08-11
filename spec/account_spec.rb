@@ -8,6 +8,8 @@ describe Account do
   end
 
   describe '#deposit' do
+    it { is_expected.to respond_to(:deposit).with(1).argument }
+
     it 'updates balance when money is deposited into account' do
       subject.deposit(1000)
       expect(subject.balance).to eq(1000)
@@ -15,6 +17,8 @@ describe Account do
   end
 
   describe '#withdraw' do
+    it { is_expected.to respond_to(:deposit).with(1).argument }
+    
     it 'updates balance when money is withdrawn from account' do
       subject.deposit(1000)
       subject.withdraw(500)
