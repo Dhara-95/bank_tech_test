@@ -3,10 +3,31 @@
     "coverage": {
       "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/spec/account_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/lib/account.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1597062570
+    "timestamp": 1597132080
   }
 }
