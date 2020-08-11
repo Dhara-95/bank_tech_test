@@ -18,6 +18,11 @@ describe Account do
       subject.deposit(1000)
       expect(subject.balance).to eq(1000)
     end
+
+    it 'adds date, credit, deposit, balance to an array when money is deposited' do
+      subject.deposit(1000)
+      expect(subject.account_history).to eq(["date: #{Time.now.strftime('%d/%m/%Y')}, credit: 0, deposit: 1000, balance: 1000"])
+    end
   end
 
   describe '#withdraw' do

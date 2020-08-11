@@ -8,6 +8,7 @@ class Account
 
   def deposit(amount)
     @balance += amount
+    @account_history.push("date: #{Time.now.strftime('%d/%m/%Y')}, credit: 0, deposit: #{amount}, balance: #{@balance}")
   end
 
   def withdraw(amount)
