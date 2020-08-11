@@ -6,7 +6,13 @@
           1,
           null,
           1,
+          1,
+          1,
+          1,
           null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -18,8 +24,11 @@
       "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/lib/account.rb": {
         "lines": [
           1,
+          1,
           null,
           1,
+          2,
+          null,
           null,
           1,
           1,
@@ -28,6 +37,6 @@
         ]
       }
     },
-    "timestamp": 1597132080
+    "timestamp": 1597136483
   }
 }
