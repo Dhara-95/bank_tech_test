@@ -21,7 +21,7 @@ describe BankAccount do
 
     it 'adds date, credit, deposit, balance to an array when money is deposited' do
       subject.deposit(1000)
-      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000 || 1000"])
+      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
     end
   end
 
@@ -42,22 +42,22 @@ describe BankAccount do
     it 'adds date, credit, deposit, balance to an array when money is withdrawn' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000 || 1000",
-        "#{Time.now.strftime('%d/%m/%Y')} || 500 || 500"])
+      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00",
+        "#{Time.now.strftime('%d/%m/%Y')} || 500.00 || 500.00"])
     end
   end
 
   describe '#print_statement' do
     it 'prints the formatted account_history' do
       subject.deposit(1000)
-      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000 || 1000"])
+      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
     end
 
     it 'prints the formatted account_history with most recent transaction first' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 500 || 500", 
-        "#{Time.now.strftime('%d/%m/%Y')} || 1000 || 1000"])
+      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 500.00 || 500.00", 
+        "#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
     end
   end
 end
