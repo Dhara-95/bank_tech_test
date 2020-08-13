@@ -99,8 +99,29 @@
           null,
           null
         ]
+      },
+      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/spec/bank_statement_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dharapatel/Projects/Makers_Main_Course/WK10/bank_tech_test/lib/bank_statement.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1597247304
+    "timestamp": 1597311377
   }
 }
