@@ -1,9 +1,12 @@
+require_relative 'bank_statement.rb'
+
 class BankAccount
   attr_reader :balance, :account_history
 
   def initialize
     @balance = 0
     @account_history = []
+    @bank_statement = BankStatement.new
   end
 
   def deposit(amount)
@@ -19,10 +22,6 @@ class BankAccount
   end
 
   def print_statement
-    puts 'date || credit || debit || balance'
-    @account_history.reverse.each do |transaction|
-      @account_history.to_s.split
-      puts transaction
-    end
+    @bank_statement.print(account_history)
   end
 end
