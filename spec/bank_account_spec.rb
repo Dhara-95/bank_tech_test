@@ -6,8 +6,8 @@ describe BankAccount do
       expect(subject.balance).to eq(0)
     end
 
-    it 'initializes with an empty account history' do
-      expect(subject.account_history).to eq([])
+    it 'initializes with an empty transaction_history' do
+      expect(subject.transaction_history).to eq([])
     end
   end
 
@@ -21,7 +21,7 @@ describe BankAccount do
 
     it 'adds date, credit/debit and balance to an array when money is deposited' do
       subject.deposit(1000)
-      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
+      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
     end
   end
 
@@ -42,7 +42,7 @@ describe BankAccount do
     it 'adds date, credit/debit and balance to an array when money is withdrawn' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.account_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00",
+      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00",
         "#{Time.now.strftime('%d/%m/%Y')} || 500.00 || 500.00"])
     end
   end
