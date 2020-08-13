@@ -1,5 +1,5 @@
 # Bank Tech Test
-This is a practice tech test challenge, which aims to simulate a Bank. The user can interact with the code via IRB to deposit and withdraw money, as well as printing a bank statement to see their transaction history.
+This is a practice tech test challenge, which aims to have the core functionality of a Bank. The user can interact with the code via IRB to deposit and withdraw money, as well as printing a bank statement to see their transaction history.
 
 The original instructions for this challenge can be found here: https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md 
 
@@ -62,6 +62,12 @@ I would like an error message if my withdrawl amount exceeds my current balance
 
 ![class_diagram](/images/class_diagram.png) 
 
+### Approach
+
+- I began this challenge by creating a simple class diagram which outlined the methods I would need in order to fulfil the specification requirements. 
+- I followed a TDD process to complete each user story as well as the edge case I identified. Commits were only made when a test passed. 
+- After the first review from a Makers Coach, I began refactoring in order to adhere to SRP. This led me to extract the print method into it's own class (BankStatement), which would be resposible for formatting the output as per the specification. The print_statement method in the BankAccount is then only responsible for printing the transaction history. This means that if the client wants a different output or to add a web interface, then this can be easily changed without changing the core logic of the BankAccount. 
+
 
 ## Instructions
 
@@ -88,7 +94,7 @@ Example of running the code in IRB to deposit & withdraw money and print the sta
 ![code_in_irb](/images/code_in_irb.png)
 
 ### Run Tests
-***11 tests, 100% Test Coverage***
+***13 tests, 100% Test Coverage***
 
 Test coverage will show in the terminal once 'rspec' command is run
 
@@ -97,7 +103,7 @@ $ rspec
 ```
 
 ### Run Code Linter
-
+***No Offences***
 ```
 $ rubocop
 ```
