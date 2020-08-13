@@ -21,7 +21,7 @@ describe BankAccount do
 
     it 'adds date, credit/debit and balance to an array when money is deposited' do
       subject.deposit(1000)
-      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
+      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || || 1000.00"])
     end
   end
 
@@ -42,8 +42,8 @@ describe BankAccount do
     it 'adds date, credit/debit and balance to an array when money is withdrawn' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00",
-        "#{Time.now.strftime('%d/%m/%Y')} || 500.00 || 500.00"])
+      expect(subject.transaction_history).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || || 1000.00",
+        "#{Time.now.strftime('%d/%m/%Y')} || || 500.00 || 500.00"])
     end
   end
 
@@ -51,8 +51,8 @@ describe BankAccount do
     it 'prints the formatted bank_statement' do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || 500.00 || 500.00", 
-        "#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || 1000.00"])
+      expect(subject.print_statement).to eq(["#{Time.now.strftime('%d/%m/%Y')} || || 500.00 || 500.00", 
+        "#{Time.now.strftime('%d/%m/%Y')} || 1000.00 || || 1000.00"])
     end
   end
 end
